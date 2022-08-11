@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body><div class="wrapper">
+    <div class="T-D">
+        <h1 id="title">Internet Experience Survey Form</h1>
+        <p id="description">We'd like to thank you for telling us about your internet experience</p>
+    </div>
+    <form action="" id="survey-form">
+        <div class="form-element">
+            <label id="name-label" for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+        </div>
+        <div class="form-element">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-element">
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" max="60" min="1" name="age" id="number" placeholder="Enter your Age">
+        </div>
+        <div class="form-element">
+            <label id="drop-label" for="dropdown">Which option best describes your internet experience ?</label>
+            <select name="Internet Experience" id="dropdown">
+                <option selected disabled value=""> Select an Option</option>
+                <option value="Bad">Bad (i hate it)</option>
+                <option value="alright">alright (no problems)</option>
+                <option value="good">Good</option>
+                <option value="excellent">Can't live without it</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <p>What Was the first thing you did in the internet ?</p>
+            <label for="1"> <input type="radio" value="Cute CAt Videos" name="first" id="1"> Cute CAt Videos</label>
+            <label for="2"> <input type="radio" value="school" name="first" id="2"> School</label>
+            <label for="3"> <input type="radio" value="P***" name="first" id="3"> P***</label>
+        </div>
+        <div class="form-element">
+            <p>What do you think about Web3.0</p>
+            <label for="1"><input type="checkbox" value="Can't wait for the mtaverse"  id="1">Can't wait for the mtaverse</label>
+            <label for="2"><input type="checkbox" value="It's all hype"  id="2">It's all hype</label>
+            <label for="3"><input type="checkbox" value="A big scam"  id="3">A big scam</label>
+            <label for="4"><input type="checkbox" value="What is Web3.0"  id="4">What is Web3.0</label>
+        </div>
+        <div class="form-element">
+            <label for="more-info">Leave a Comment ?</label>
+            <textarea name="" id="more-info" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" id="submit" value="Beep Boop">
+    </form>
+</div>
+</body>
+</html>
